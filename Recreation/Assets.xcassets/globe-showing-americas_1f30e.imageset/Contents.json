@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "globe-showing-americas_1f30e.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "globe-showing-americas_1f30e copy.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "globe-showing-americas_1f30e copy 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
