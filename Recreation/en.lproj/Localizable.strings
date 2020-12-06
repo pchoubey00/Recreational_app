@@ -5,3 +5,25 @@
   Created by Prinaya Choubey on 12/3/20.
   Copyright © 2020 Prinaya Choubey. All rights reserved.
 */
+"copyright" = "Copyright © 2020 Prinaya Choubey";
+"back" = "Back" ;
+"animation" = "Animation" ;
+"settings" = "Settings" ; 
+"change" = "Change" ;
+"Teal" = "Teal";
+"Pink" = "Pink";
+"Yellow" = "Yellow" ;
+"travel" = "Travel";
+"read" = "Read";
+"background" = "Background";
+"rating" = "Rating";
+"newentry" = "New Entry";
+"book" = "Book";
+"add" = "Add";
+"cancel" = "Cancel";
+"hello" = "Hello!";
+"welcome" = "Welcome to our app!" ;
+"okay" = "OK";
+
+
+

@@ -14,9 +14,15 @@ class EditVC: UIViewController {
 
     @IBOutlet weak var bookTextField: UITextField!
     
+    @IBOutlet weak var genrelabel: UILabel!
+    @IBOutlet weak var ratestuff: UILabel!
+    @IBOutlet weak var booklabel: UILabel!
+    @IBOutlet weak var newentry: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var ratingStepper: UIStepper!
     
+    @IBOutlet weak var addbtn: UIButton!
+    @IBOutlet weak var cancelbtn: UIButton!
     @IBOutlet weak var genreTextField: UITextField!
     var rating = 0 {
            willSet {
@@ -25,6 +31,12 @@ class EditVC: UIViewController {
        }
     override func viewDidLoad() {
         super.viewDidLoad()
+        ratestuff.text = NSLocalizedString("rating", comment: "")
+        newentry.text = NSLocalizedString("newentry", comment: "")
+        booklabel.text = NSLocalizedString("book", comment: "")
+        addbtn.setTitle(NSLocalizedString("add", comment: ""), for: .normal)
+        cancelbtn.setTitle(NSLocalizedString("cancel", comment: ""), for: .normal)
+        
         ratingStepper.value = 3
         
         if let preferredColor = defaults.object(forKey: "backgroundcolor") as? Int {

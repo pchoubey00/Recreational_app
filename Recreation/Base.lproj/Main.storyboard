@@ -298,8 +298,14 @@
                         <viewLayoutGuide key="safeArea" id="Vz5-FM-BxF"/>
                     </view>
                     <connections>
+                        <outlet property="addbtn" destination="kGx-tN-q3Q" id="CiL-s9-NxE"/>
                         <outlet property="bookTextField" destination="2wM-th-cas" id="hUb-5Y-QLu"/>
+                        <outlet property="booklabel" destination="oa8-Nq-cOX" id="K1L-4H-p9g"/>
+                        <outlet property="cancelbtn" destination="l0G-Rz-yda" id="fQ7-sA-UA7"/>
                         <outlet property="genreTextField" destination="PNY-Zk-ufq" id="8BW-PW-yUv"/>
+                        <outlet property="genrelabel" destination="gHT-96-Qc0" id="vvz-O1-w2n"/>
+                        <outlet property="newentry" destination="C34-xe-Kjl" id="rIG-Gj-FIO"/>
+                        <outlet property="ratestuff" destination="5yo-PF-bSD" id="zI6-F0-Kom"/>
                         <outlet property="ratingLabel" destination="W5V-PT-Wdf" id="cXu-1q-q06"/>
                         <outlet property="ratingStepper" destination="peQ-mg-h35" id="LUp-nu-Ghf"/>
                     </connections>
@@ -665,7 +671,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iqz-6o-ssz"/>
+        <segue reference="n3d-1I-naq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="airplane_2708" width="240" height="240"/>

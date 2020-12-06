@@ -44,10 +44,10 @@ class IntroVC: UIViewController {
         self.view.addGestureRecognizer(rightSwipeGestureRecognizer)
         NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { _ in
                     
-                        let alert = UIAlertController(title: "Hello!",
-                                                      message: "Welcome to this app",
+                        let alert = UIAlertController(title: NSLocalizedString("hello", comment: ""),
+                                                      message: NSLocalizedString("welcome", comment: ""),
                                                       preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+            alert.addAction(UIAlertAction(title: NSLocalizedString("okay", comment: ""), style: .cancel))
                         self.present(alert, animated: true)
                     }
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { _ in
