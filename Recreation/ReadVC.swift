@@ -21,6 +21,7 @@ class ReadVC: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = self
                tableView.delegate = self
+        self.title = NSLocalizedString("readlist", comment: "")
        
         
         readData()
@@ -61,7 +62,7 @@ class ReadVC: UITableViewController {
                    } else if preferredColor == 1{
                        cell.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
                    } else if preferredColor == 2{
-                       cell.backgroundColor = UIColor.systemYellow
+                       cell.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
                    }
                 }
 

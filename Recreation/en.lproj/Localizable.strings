@@ -10,9 +10,9 @@
 "animation" = "Animation" ;
 "settings" = "Settings" ; 
 "change" = "Change" ;
-"Teal" = "Teal";
-"Pink" = "Pink";
-"Yellow" = "Yellow" ;
+"Teal" = "Teal 💙";
+"Pink" = "Pink💗";
+"Yellow" = "Yellow 💛" ;
 "travel" = "Travel";
 "read" = "Read";
 "background" = "Background";
@@ -22,8 +22,20 @@
 "add" = "Add";
 "cancel" = "Cancel";
 "hello" = "Hello!";
-"welcome" = "Welcome to our app!" ;
+"welcome1" = "Welcome to our app! Swipe left on this screen! Then right!" ;
 "okay" = "OK";
+"capital" = "Capital:";
+"glad" = "Glad to have you!";
+"welcome" = "Welcome back!";
+"happytravel1" = "Welcome to Oceania!";
+"happytravel2" = "Enjoy the sun and the beach!🏄‍♂️";
+"oceania" = "Oceania 🌊";
+"thanks" = "Thanks!" ;
+"readlist" = "Readings📖";
+
+
+
+
 
 
 

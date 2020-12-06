@@ -36,7 +36,8 @@ class EditVC: UIViewController {
         booklabel.text = NSLocalizedString("book", comment: "")
         addbtn.setTitle(NSLocalizedString("add", comment: ""), for: .normal)
         cancelbtn.setTitle(NSLocalizedString("cancel", comment: ""), for: .normal)
-        
+        ratingStepper.maximumValue = 5
+        ratingStepper.minimumValue = 1 
         ratingStepper.value = 3
         
         if let preferredColor = defaults.object(forKey: "backgroundcolor") as? Int {
@@ -47,7 +48,7 @@ class EditVC: UIViewController {
                                  self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
                               
                              } else if preferredColor == 2{
-                                 self.view.backgroundColor = UIColor.systemYellow
+                                 self.view.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
                                
                              }
                           }

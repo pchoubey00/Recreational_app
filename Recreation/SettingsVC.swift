@@ -42,7 +42,8 @@ class SettingsVC: UIViewController {
                 } else if preferredColor == 1{
                     self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
                 } else if preferredColor == 2{
-                    self.view.backgroundColor = UIColor.systemYellow
+                    //rgb(255,255,212)
+                    self.view.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
                 }
              }
         settingsTitle.text = NSLocalizedString("settings", comment: "")
@@ -64,7 +65,8 @@ class SettingsVC: UIViewController {
                       } else if preferredColor == 1{
                           self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
                       } else if preferredColor == 2{
-                          self.view.backgroundColor = UIColor.systemYellow
+                          self.view.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
+
                       }
                    }
      
@@ -97,7 +99,8 @@ class SettingsVC: UIViewController {
                         self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
                        
                       } else if preferredColor == 2{
-                          self.view.backgroundColor = UIColor.systemYellow
+                          self.view.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
+
                         
                       }
                    }

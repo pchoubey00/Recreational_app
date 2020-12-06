@@ -23,18 +23,18 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = NSLocalizedString("oceania", comment: "")
         back.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
         tableView.dataSource = self
         tableView.delegate = self
-        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { _ in
-                
-                    let alert = UIAlertController(title: "Tip of the Day",
-                                                  message: "Happy travelling",
-                                                  preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-                    self.present(alert, animated: true)
-                
-            }
+        
+        let alert = UIAlertController(title: NSLocalizedString("happytravel1", comment: ""), message: NSLocalizedString("happytravel2", comment: ""), preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("thanks", comment: ""), style: .cancel)
+        
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+        //score = score + 1
+     
       
         
           let url = URL(string: "https://restcountries.eu/rest/v2/region/oceania?fields=name;capital")!
@@ -99,13 +99,14 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         let country = namearray[indexPath.row]
         cell.countryLabel!.text = country
         cell.capitalLabel!.text = capital
+        cell.capital!.text = NSLocalizedString("capital", comment: "")
         if let preferredColor = defaults.object(forKey: "backgroundcolor") as? Int {
            if preferredColor == 0{
             cell.backgroundColor = UIColor(red: CGFloat(173.0/255.0), green: CGFloat(230.0/255.0), blue: CGFloat(216.0/255.0), alpha: CGFloat(1.0))
            } else if preferredColor == 1{
                cell.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
            } else if preferredColor == 2{
-               cell.backgroundColor = UIColor.systemYellow
+               cell.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
            }
         }
         return cell

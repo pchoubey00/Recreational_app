@@ -45,15 +45,15 @@ class IntroVC: UIViewController {
         NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { _ in
                     
                         let alert = UIAlertController(title: NSLocalizedString("hello", comment: ""),
-                                                      message: NSLocalizedString("welcome", comment: ""),
+                                                      message: NSLocalizedString("welcome1", comment: ""),
                                                       preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("okay", comment: ""), style: .cancel))
                         self.present(alert, animated: true)
                     }
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { _ in
                         
-                            let alert = UIAlertController(title: "Glad to have you",
-                                                          message: "Welcome Back",
+                            let alert = UIAlertController(title: NSLocalizedString("glad", comment: ""),
+                                                          message: NSLocalizedString("welcome", comment: ""),
                                                           preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: .cancel))
                             self.present(alert, animated: true)
@@ -86,7 +86,7 @@ class IntroVC: UIViewController {
            } else if preferredColor == 1{
                self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
            } else if preferredColor == 2{
-               self.view.backgroundColor = UIColor.systemYellow
+               self.view.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(161.0/255.0), alpha: CGFloat(1.0))
            }
         }
         if let preferredAnimation = defaults.object(forKey: "Animation") as? Bool{

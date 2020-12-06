@@ -10,9 +10,9 @@
 "animation" = "Animación";
 "settings" = "Ajustes";
 "change" = "Cambiar" ;
-"Teal" = "azul";
-"Pink" = "rosa";
-"Yellow" = "amarillo" ;
+"Teal" = "azul 💙";
+"Pink" = "rosa 💗";
+"Yellow" = "amarillo 💛" ;
 "travel" = "Viajar";
 "read" = "Leer";
 "background" = "Fondo";
@@ -22,5 +22,15 @@
 "add" = "Añadir";
 "cancel" = "Cancelar";
 "hello" = "Hola!" ; 
-"welcome" = "Bienvenido a nuestra aplicación!";
-"okay" = "Si"; 
+"welcome1" = "Bienvenido a nuestra aplicación!¡Desliza el dedo hacia la izquierda en esta pantalla! ¡Entonces a la derecha!";
+"okay" = "Si";
+"capital" = "Capital:" ;
+"glad" = "Encantada de tenerte!";
+"welcome" = "Dar una buena acogida!";
+"happytravel1" = "Bienvenida a oceania!";
+"happytravel2" = "Disfruta del sol y la playa!🏄‍♂️";
+"oceania" = "Oceania 🌊";
+"thanks" = "Gracias!" ;
+"readlist" = "Lecturas📖";
+
+

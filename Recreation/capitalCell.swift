@@ -12,6 +12,7 @@ class capitalCell: UITableViewCell {
 
     @IBOutlet weak var countryLabel: UILabel!
     
+    @IBOutlet weak var capital: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
