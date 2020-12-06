@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class EditVC: UIViewController {
+     let defaults = UserDefaults.standard
 
     @IBOutlet weak var bookTextField: UITextField!
     
@@ -25,6 +26,19 @@ class EditVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ratingStepper.value = 3
+        
+        if let preferredColor = defaults.object(forKey: "backgroundcolor") as? Int {
+                             if preferredColor == 0{
+                                 self.view.backgroundColor = UIColor(red: CGFloat(173.0/255.0), green: CGFloat(230.0/255.0), blue: CGFloat(216.0/255.0), alpha: CGFloat(1.0))
+                               
+                             } else if preferredColor == 1{
+                                 self.view.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
+                              
+                             } else if preferredColor == 2{
+                                 self.view.backgroundColor = UIColor.systemYellow
+                               
+                             }
+                          }
 
         // Do any additional setup after loading the view.
     }
@@ -58,7 +72,7 @@ class EditVC: UIViewController {
                               }
             }
         }
-        presentingViewController?.dismiss(animated: true)
+        //presentingViewController?.dismiss(animated: true)
         
     }
     

@@ -11,12 +11,17 @@ import CoreData
 
 
 class ReadVC: UITableViewController {
+     let defaults = UserDefaults.standard
     var reads: [NSManagedObject] = []
 
+    @IBOutlet weak var back: UIBarButtonItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
                tableView.delegate = self
+       
         
         readData()
 
@@ -49,6 +54,16 @@ class ReadVC: UITableViewController {
             if let item = reads[indexPath.row] as? Item {
                 cell.update(with: item)
             }
+        
+        if let preferredColor = defaults.object(forKey: "backgroundcolor") as? Int {
+                   if preferredColor == 0{
+                    cell.backgroundColor = UIColor(red: CGFloat(173.0/255.0), green: CGFloat(230.0/255.0), blue: CGFloat(216.0/255.0), alpha: CGFloat(1.0))
+                   } else if preferredColor == 1{
+                       cell.backgroundColor = UIColor(red: CGFloat(244.0/255.0), green: CGFloat(194.0/255.0), blue: CGFloat(194.0/255.0), alpha: CGFloat(1.0))
+                   } else if preferredColor == 2{
+                       cell.backgroundColor = UIColor.systemYellow
+                   }
+                }
 
 
          // Configure the cell...
@@ -119,15 +134,15 @@ class ReadVC: UITableViewController {
     @IBAction func onEditBtn(_ sender: Any) {
          setEditing(!isEditing, animated: true)
     }
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+ 
 
-        // Configure the cell...
+     @IBAction func onBack(_ sender: UIButton) {
+         presentingViewController?.dismiss(animated: true)
+     }
+     // Configure the cell...
 
-        return cell
-    }
-    */
+ 
+
 
     /*
     // Override to support conditional editing of the table view.

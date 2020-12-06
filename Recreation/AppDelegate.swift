@@ -12,10 +12,17 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let defaultsdictionary: [String : Any] = [
+        "backgroundcolor" : 0,
+        "Animation" : true
+        
+        
+    ]
+        
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        initDefaults()
         return true
     }
 
@@ -87,6 +94,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          cdContext.automaticallyMergesChangesFromParent = true
          return cdContext
      }
+    
+    func initDefaults(){
+        UserDefaults.standard.register(defaults: defaultsdictionary)
+    }
+    func resetDefaults(){
+        defaultsdictionary.keys.forEach{
+            UserDefaults.standard.removeObject(forKey: $0)
+        }
+        
+    }
 
 }
 
